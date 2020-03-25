@@ -38,15 +38,15 @@
 <form method='post' action='/result'> {% csrf_token %}
   <div class="form-group">
     <label for="Age">Age (in years)</label>
-    <input class="form-control" type="number" id="exampleInputEmail1" Required>
+    <input class="form-control" type="number" id="exampleInputEmail1" name="Age" Required>
   </div>
   <div class="form-group">
     <label for="BodyTemp.">Body temperature (in &#176;F)</label>
-    <input class="form-control" type="number" id="exampleInputEmail1" Required>
+    <input class="form-control" id="exampleInputEmail1" name="BodyTemp." Required>
   </div>
   <div class="form-group">
     <label for="Fatigue">Fatigue</label>
-    <select class="form-control" id="exampleFormControlSelect1" Required>
+    <select class="form-control" id="exampleFormControlSelect1" name="Fatigue" Required>
       <option value="">None</option>
       <option value="0">No</option>
       <option value="1">Yes</option>
@@ -54,7 +54,7 @@
   </div>
   <div class="form-group">
     <label for="Cough">Cough</label>
-    <select class="form-control" id="exampleFormControlSelect1" Required>
+    <select class="form-control" id="exampleFormControlSelect1" name="Cough" Required>
       <option value="">None</option>
       <option value="0">No</option>
       <option value="1">Yes</option>
@@ -62,7 +62,7 @@
   </div>
   <div class="form-group">
     <label for="BodyPain">Body pain</label>
-    <select class="form-control" id="exampleFormControlSelect1" Required>
+    <select class="form-control" id="exampleFormControlSelect1" name="BodyPain" Required>
       <option value="">None</option>
       <option value="0">No</option>
       <option value="1">Yes</option>
@@ -70,7 +70,7 @@
   </div>
   <div class="form-group">
     <label for="SoreThroat">Sore throat</label>
-    <select class="form-control" id="exampleFormControlSelect1" Required>
+    <select class="form-control" id="exampleFormControlSelect1" name="SoreThroat" Required>
       <option value="">None</option>
       <option value="0">Not at all</option>
       <option value="1">Little bit</option>
@@ -79,7 +79,7 @@
   </div>
   <div class="form-group">
     <label for="BreathingDifficulty">Difficulty in breathing</label>
-    <select class="form-control" id="exampleFormControlSelect1" Required>
+    <select class="form-control" id="exampleFormControlSelect1" name="BreathingDifficulty" Required>
       <option value="">None</option>
       <option value="0">Not at all</option>
       <option value="1">Little bit</option>
