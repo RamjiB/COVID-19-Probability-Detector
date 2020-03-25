@@ -58,7 +58,8 @@ Although doctors can use this by prioritising the patients, even the people at h
 To run this system, you should have following requirements in your PC:
 1. sklearn
 2. numpy
-3. django
+3. pandas
+4. django
 
 
 
