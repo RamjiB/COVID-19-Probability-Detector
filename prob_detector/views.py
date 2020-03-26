@@ -40,6 +40,6 @@ def analyse(request):
     SoreThroat = int(request.POST.get('SoreThroat'))
     BreathingDifficulty = int(request.POST.get('BreathingDifficulty'))
     infProb = clf.predict_proba([[Age, BodyTemp, Fatigue, Cough, BodyPain, SoreThroat, BreathingDifficulty]])
-    params = {'InfProb': round(infProb[0][1]*100, 2)}
+    params = {'InfProb': round(infProb[0][1]*100, 2), 'Degree': round(infProb[0][1]*180, 2)}
     return render(request, 'result.html', params)
 
